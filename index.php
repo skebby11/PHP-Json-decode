@@ -55,7 +55,7 @@
 	<?php 
 	$adress = "via%20pascal%2033/2%2042123%20reggio%20emilia";
 
-$myJsonData = file_get_contents("https://maps.googleapis.com/maps/api/geocode/json?address=$adress&key=AIzaSyBx9YiBsb5yjNIg4EJ8_kfLk_IqCCyHPxg");
+$myJsonData = file_get_contents("https://maps.googleapis.com/maps/api/geocode/json?address=$adress&key=GMAPS KEY");
 $myArrayData = json_decode($myJsonData, 1);
 foreach($myArrayData['results'] as $myItem){    
 $lat = $myItem['geometry']['location']['lat'];
