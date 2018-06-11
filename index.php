@@ -53,7 +53,7 @@
 			<input type="submit" value="Invia">
 		</form>
 	<?php 
-	$adress = "via%20pascal%2033/2%2042123%20reggio%20emilia";
+	$adress = "via%20Roma%202%2042123%20reggio%20emilia";
 
 $myJsonData = file_get_contents("https://maps.googleapis.com/maps/api/geocode/json?address=$adress&key=GMAPS KEY");
 $myArrayData = json_decode($myJsonData, 1);
